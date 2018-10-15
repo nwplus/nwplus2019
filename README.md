@@ -1,17 +1,6 @@
-<h1 align="center">nwHacks 2019 ⛰</h1>
+<h1 align="center">nwPlus 2019 ⛰</h1>
 <p align="center">
-  The website, registration, and check-in system for nwHacks 2019
-</p>
-
-<p align="center">
-  <a href="https://travis-ci.com/nwplus/nwhacks2019">
-    <img src="https://travis-ci.com/nwplus/nwhacks2019.svg?branch=master"
-      alt="Build Status" />
-  </a>
-
-  <a href="https://codecov.io/gh/nwplus/nwhacks2019">
-    <img src="https://codecov.io/gh/nwplus/nwhacks2019/branch/master/graph/badge.svg" />
-  </a>
+  The static websites for nwPlus and Local Hack Day
 </p>
 
 <br>
@@ -19,10 +8,10 @@
 ## :construction: Development
 
 ```bash
-$> git clone https://github.com/nwplus/nwhacks2019.git
-$> cd nwhacks2019 ; make
-$> cp .example.env .env
-$> vi .env # fill out environment variables
+$> git clone https://github.com/nwplus/nwplus2019.git
+$> cd nwplus2019
+$> make deps
+$> make web
 ```
 
 ### Web App
@@ -30,20 +19,7 @@ $> vi .env # fill out environment variables
 The front-end is a React web app.
 
 ```bash
-$> make web         # Serve web app using webpack-dev-server
-$> make build       # To build the web app into `./docs`
-$> make serve       # Serve built static web app
-```
-
-### Functions
-
-The back-end is powered by serverless functions deployed to Firebase.
-
-```bash
-$> make functions   # Deploy functions locally
-$> make shell       # Start an interactive shell for functions
-
-# Deployment
-$> make deploy-dev
-$> make deploy-prod
+$> make web       # Serve web app using webpack-dev-server
+$> make build     # To build the web app into `./docs`
+$> make serve     # Serve built static web app
 ```
