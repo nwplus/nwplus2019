@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
+import { Switch, Route, HashRouter, Redirect } from 'react-router-dom';
 
 // Containers
 // import Home from '../home/Home';
@@ -15,7 +15,7 @@ class App extends React.Component {
     const { base } = this.props;
 
     return (
-      <BrowserRouter basename={base}>
+      <HashRouter basename={base}>
         <div>
           <Navbar />
           <Switch>
@@ -26,7 +26,7 @@ class App extends React.Component {
             <Route component={() => <Redirect to="/page_not_found" />} />
           </Switch>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
