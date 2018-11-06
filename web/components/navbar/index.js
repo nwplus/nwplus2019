@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { DISPLAY_TYPE } from '../../containers/navbar/DisplayTypes';
 import { BUTTON_TYPE } from '../../containers/navbar/ButtonTypes';
 import { SECTION } from '../home/Sections';
-import { SecondaryButton } from '../input/buttons';
+import { SecondaryButton, PrimaryButton } from '../input/buttons';
 
 import logo from '../../assets/logo.svg';
+
+const lhdUrl = 'https://localhackday.mlh.io/lhd-2018/events/33-nwplus-at-the-university-of-british-columbia';
 
 const getButton = (buttonType) => {
   switch (buttonType) {
@@ -16,6 +18,8 @@ const getButton = (buttonType) => {
       return (<Link to="/logout"><SecondaryButton text="Sign out" /></Link>);
     case BUTTON_TYPE.DASHBOARD:
       return (<Link to="/dashboard"><SecondaryButton text="My application" /></Link>);
+    case BUTTON_TYPE.REGISTER:
+      return (<a href={lhdUrl} target="_blank" rel="noopener noreferrer"><PrimaryButton text="Register" /></a>);
     default:
       return (<div />);
   }
