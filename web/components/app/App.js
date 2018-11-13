@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 
 // Containers
-import Home from '../home/Home';
+// import Home from '../home/Home';
+import LocalHackDay from '../local-hack-day/index';
 import Navbar from '../../containers/navbar';
 
 // Components
@@ -18,7 +19,8 @@ class App extends React.Component {
         <div>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Home} />
+            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/localhackday" component={LocalHackDay} />
             <Route path="/page_not_found" component={NotFound} />
             <Route component={() => <Redirect to="/page_not_found" />} />
           </Switch>

@@ -1,0 +1,101 @@
+$spacing-section: 80px // padding between each section
+
+body
+  overflow-x: hidden
+.lhd
+  background: $gradient-purple
+  .pad-bottom-section
+    padding-bottom: $spacing-section
+  
+  &-email-registration
+    @media screen and (max-width: $mobile-s)
+      flex-direction: column !important
+      > button.primary
+        width: 100%
+
+    > .text-input
+      width: 100%
+      max-width: 300px
+
+  .first-panel
+    background-color: $white
+    padding-top: 64px
+    display: block
+    overflow-y: auto
+    overflow-x: hidden
+    z-index: 0
+    position: relative
+    .scenery
+      &-desktop
+        z-index: -1
+        display: inline
+        @media screen and (max-width: $tablet)
+          display: none
+      &-mobile
+        z-index: -1
+        display: none
+        @media screen and (max-width: $tablet)
+          display: inline
+  .register-button
+    z-index: 100
+    display: block
+    margin-right: auto
+    margin-left: auto
+    margin-top: -29px
+    height: 45px
+    min-width: 25%
+    @media screen and (max-width: $tablet)
+      min-width: 100%
+
+  &-skyline
+    margin-bottom: -$spacing-tera
+    @media screen and (max-width: $desktop)
+      margin-bottom: $spacing-s
+
+  &-scale-top
+    @media screen and (max-width: $tablet)
+      padding-top: $spacing-tera !important
+
+  .row-intro:first-of-type
+    padding-bottom: 0
+  .row-image-and-desc
+    @extend .pad-sides-tera
+    .large-svg
+      @media screen and (max-width: $laptop)
+        margin: 0 auto
+        height: auto
+      img
+        max-width: 100%
+        display: block;
+        margin: 0 auto;
+
+  .row-stories
+    > div
+      width: 30%
+      .overlay
+        top: 0
+        left: 0
+        position: absolute
+        padding-left: 16px
+        padding-top: 16px
+
+      .hover-description
+        background: $gradient-secondary
+
+  .faq
+    > div
+      width: 50%
+      @media screen and (max-width: $desktop)
+        width: 100%
+        margin-left: 0
+        margin-right: 0
+    h3
+      font-family: 'Apercu Pro'
+      font-size: 24px
+      margin-bottom: 0
+      margin-top: 22px
+    .emoji
+      height: 1.15em
+
+  .sponsors
+    font-weight: bold

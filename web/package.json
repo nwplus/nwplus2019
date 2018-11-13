@@ -8,11 +8,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --watch",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
-    "serve": "http-server ../docs -a localhost -p 8081 -c-1",
-    "test": "cross-env NODE_ENV=development jest",
-    "lint": "eslint . --ignore-pattern node_modules/"
+    "start": "./node_modules/.bin/cross-env NODE_ENV=development webpack-dev-server --hot --inline --watch",
+    "build": "./node_modules/.bin/cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "serve": "./node_modules/.bin/http-server ../docs -a localhost -p 8081 -c-1",
+    "test": "./node_modules/.bin/cross-env NODE_ENV=development jest",
+    "lint": "./node_modules/.bin/eslint . --ignore-pattern node_modules/"
   },
   "jest": {
     "moduleNameMapper": {
