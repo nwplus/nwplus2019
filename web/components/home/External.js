@@ -8,4 +8,10 @@ export const EXTERNAL = Object.freeze({
   INSTAGRAM: 'https://www.instagram.com/nwplusubc/',
   MEDIUM: 'https://medium.com/nwhacks',
   TWITTER: 'https://twitter.com/nwplusubc',
+  LHD: {
+    FACEBOOK: 'https://www.facebook.com/ubchacks/',
+    INSTAGRAM: 'https://www.instagram.com/ubchacks/',
+    TWITTER: 'https://twitter.com/ubchacks',
+    SPONSORSHIP_PACKAGE: 'https://drive.google.com/file/d/1HAlMJ5SdROPK_oHcmavKKEMlcxg2lRlM/view?usp=sharing',
+  },
 });

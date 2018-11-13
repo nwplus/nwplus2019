@@ -11,6 +11,9 @@ footer
   .footer-content
     margin: auto
     width: 473px
+    padding-top: $spacing-l
+    @media (max-width: 1400px)
+      padding-top: $spacing-xxl
     @media (max-width: 473px)
       width: auto
     .social
@@ -38,55 +41,103 @@ footer
         color: $white
 
   .scale-scenery
-    .left-trees, .bear, .right-trees
+    .left-scenery, .bike, .bike-mobile, .right-scenery, .right-scenery-mobile, .right-scenery-lhd, .right-scenery-lhd-mobile
       position: absolute
-    .left-trees
-      height: 136px
-      top: -111.89px
-      left: -6px
-    .bear
-      height: 100.48px
-      top: -49.5px
-      left: 108.58px
-    .right-trees
-      height: 151px
-      top: -137px
-      right: 10px
-    @media (min-width: $mobile)
-      .left-trees
-        height: 170px
-        top: -139.77px
-        left: -6px
-      .bear
-        height: 125.6px
-        top: -61.875px
-        left: 135.725px
-      .right-trees
-        height: 188.75px
+    .left-scenery
+      height: 173px
+      top: -148px
+    .bike
+      display: none
+      &-mobile
+        height: 41px
+        top: -33px
+        left: 105px
+    .right-scenery
+      display: none
+      &-mobile
+        height: 77px
         top: -171.25px
-        right: 10px
+        right: 6px
+    .right-scenery-lhd
+      display: none
+      &-mobile
+        height: 77px
+        top: -68px
+        right: 4px
+    @media (min-width: $mobile)
+      .left-scenery
+        height: 350px
+        top: -299px
+      .bike-mobile
+        height: 63px
+        top: -43px
+        left: 234px
+      .right-scenery-mobile
+        height: 179px
+        top: -138px
+        right: 4px
+      .right-scenery-lhd-mobile
+        height: 157px
+        top: -138px
+        right: 4px
+    @media (min-width: $phablet) // handles hiding mobile components and showing desktop components
+      .bike
+        display: inline
+        &-mobile
+          display: none
+      .right-scenery-lhd
+        display: inline
+        &-mobile
+          display: none
+      .right-scenery
+        display: inline
+        &-mobile
+          display: none
     @media (min-width: $phablet)
-      .left-trees
-        height: 272px
-        top: -223.8px
-      .bear
-        height: 200.96px
-        top: -98.7px
-        left: 217.16px
-      .right-trees
-        height: 302px
-        top: -274px
-        right: 40px
+      .left-scenery
+        height: 399px
+        top: -341px
+      .bike
+        height: 71px
+        top: -61px
+        left: 251px
+      .right-scenery
+        height: 179px
+        top: -140px
+        right: 80px
+      .right-scenery-lhd
+        height: 179px
+        top: -140px
+        right: 57px
     @media (min-width: $laptop)
-      .left-trees
-        height: 489px
-        top: -401.8px
-      .bear
-        height: 225.24px
-        top: -110.9px
-        left: 424px
-      .right-trees
-        height: 541.06px
-        top: -492px
-        right: 93px
-
+      .left-scenery
+        height: 599px
+        top: -512px
+      .bike
+        height: 106px
+        top: -90px
+        left: 369px
+      .right-scenery
+        height: 268px
+        top: -210px
+        right: 122px
+      .right-scenery-lhd
+        height: 268px
+        top: -210px
+        right: 122px
+    @media (min-width: 1400px)
+      .left-scenery
+        height: 599px
+        top: -512px
+      .bike
+        height: 106px
+        top: -34px
+        left: 343px
+      .right-scenery
+        height: 268px
+        top: -210px
+        right: 122px
+      .right-scenery-lhd
+        height: 268px
+        top: -210px
+        right: 122px

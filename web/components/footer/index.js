@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { EXTERNAL } from '../home/External';
 
-import bear from '../../assets/footer/scenery/bear.svg';
-import mobileRightTrees from '../../assets/footer/scenery/right-trees.svg';
-import mobileLeftTrees from '../../assets/footer/scenery/left-trees.svg';
+import leftScenery from '../../assets/footer/scenery/left-scenery.svg';
+import bike from '../../assets/footer/scenery/bike.svg';
+import bikeMobile from '../../assets/footer/scenery/bike-mobile.svg';
+import rightScenery from '../../assets/footer/scenery/right-scenery.svg';
+import rightSceneryMobile from '../../assets/footer/scenery/right-scenery-mobile.svg';
+import rightSceneryLHD from '../../assets/footer/scenery/right-scenery-lhd.svg';
+import rightSceneryLHDMobile from '../../assets/footer/scenery/right-scenery-lhd-mobile.svg';
 
 import facebookIcon from '../../assets/footer/icons/facebook.svg';
 import instagramIcon from '../../assets/footer/icons/instagram.svg';
@@ -11,26 +16,75 @@ import mediumIcon from '../../assets/footer/icons/medium.svg';
 import twitterIcon from '../../assets/footer/icons/twitter.svg';
 
 const social = {
-  facebook: {
-    alt: 'facebook',
-    src: facebookIcon,
-    href: EXTERNAL.FACEBOOK,
-  },
-  instagram: {
-    alt: 'instagram',
-    src: instagramIcon,
-    href: EXTERNAL.INSTAGRAM,
-  },
-  medium: {
-    alt: 'medium',
-    src: mediumIcon,
-    href: EXTERNAL.MEDIUM,
-  },
-  twitter: {
-    alt: 'twitter',
-    src: twitterIcon,
-    href: EXTERNAL.TWITTER,
-  },
+  nwplus: [
+    {
+      alt: 'facebook',
+      src: facebookIcon,
+      href: EXTERNAL.FACEBOOK,
+    },
+    {
+      alt: 'instagram',
+      src: instagramIcon,
+      href: EXTERNAL.INSTAGRAM,
+    },
+    {
+      alt: 'medium',
+      src: mediumIcon,
+      href: EXTERNAL.MEDIUM,
+    },
+    {
+      alt: 'twitter',
+      src: twitterIcon,
+      href: EXTERNAL.TWITTER,
+    },
+  ],
+  lhd: [
+    {
+      alt: 'facebook',
+      src: facebookIcon,
+      href: EXTERNAL.LHD.FACEBOOK,
+    },
+    {
+      alt: 'instagram',
+      src: instagramIcon,
+      href: EXTERNAL.LHD.INSTAGRAM,
+    },
+    {
+      alt: 'twitter',
+      src: twitterIcon,
+      href: EXTERNAL.LHD.TWITTER,
+    },
+  ],
+};
+const links = {
+  nwplus: [
+    {
+      href: EXTERNAL.EMAIL_US,
+      text: 'E-mail Us',
+    },
+    {
+      href: EXTERNAL.CODE_OF_CONDUCT,
+      text: 'Code Of Conduct',
+    },
+    {
+      href: EXTERNAL.SPONSORSHIP_PACKAGE,
+      text: 'Become a Sponsor',
+    },
+  ],
+  lhd: [
+    {
+      href: EXTERNAL.EMAIL_US,
+      text: 'E-mail Us',
+    },
+    {
+      href: EXTERNAL.CODE_OF_CONDUCT,
+      text: 'Code Of Conduct',
+    },
+    {
+      href: EXTERNAL.LHD.SPONSORSHIP_PACKAGE,
+      text: 'Become a Sponsor',
+    },
+  ],
 };
 
 const getImage = (alt, src, className) => (
@@ -40,30 +94,35 @@ const getImage = (alt, src, className) => (
     src={src} />
 );
 
-const getIcon = obj => (
-  <a href={obj.href}>
-    {getImage(obj.alt, obj.src, obj.className)}
+const getIcon = icon => (
+  <a href={icon.href}>
+    {getImage(icon.alt, icon.src, icon.className)}
   </a>
 );
 
-const Footer = () => (
+const getLink = link => (
+  <a href={link.href}>{link.text}</a>
+);
+
+const Footer = ({ type }) => (
   <footer className="footer fill-width">
     <div className="scale-scenery">
-      {getImage('trees', mobileLeftTrees, 'left-trees')}
-      {getImage('bear', bear, 'bear')}
-      {getImage('trees', mobileRightTrees, 'right-trees')}
+      {getImage('left-scenery', leftScenery, 'left-scenery')}
+      {getImage('bike', bike, 'bike')}
+      {getImage('bike-mobile', bikeMobile, 'bike-mobile')}
+      {(type === 'lhd')
+        ? getImage('right-scenery-lhd', rightSceneryLHD, 'right-scenery-lhd')
+        : getImage('right-scenery', rightScenery, 'right-scenery')}
+      {(type === 'lhd')
+        ? getImage('right-scenery-lhd-mobile', rightSceneryLHDMobile, 'right-scenery-lhd-mobile')
+        : getImage('right-scenery-mobile', rightSceneryMobile, 'right-scenery-mobile')}
     </div>
     <div className="footer-content">
-      <div className="social flex dir-row jc-between pad-top-l">
-        {getIcon(social.facebook)}
-        {getIcon(social.instagram)}
-        {getIcon(social.medium)}
-        {getIcon(social.twitter)}
+      <div className="social flex dir-row jc-between">
+        {social[type].map(icon => getIcon(icon))}
       </div>
       <div className="links flex jc-between pad-ends-l">
-        <a href={EXTERNAL.EMAIL_US}>E-mail Us</a>
-        <a href={EXTERNAL.CODE_OF_CONDUCT}>Code of Conduct</a>
-        <a href={EXTERNAL.SPONSORSHIP_PACKAGE}>Become a Sponsor</a>
+        {links[type].map(link => getLink(link))}
       </div>
       <div className="footnote pad-bot-l">
         <p>Organized and held by nwPlus
@@ -73,5 +132,9 @@ const Footer = () => (
     </div>
   </footer>
 );
+
+Footer.propTypes = {
+  type: PropTypes.string,
+};
 
 export { Footer };
