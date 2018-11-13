@@ -1,0 +1,35 @@
+<svg width="345" height="345" viewBox="0 0 345 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="172.5" cy="172.5" r="172.5" fill="url(#paint0_linear)"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="345" height="345">
+<circle cx="172.5" cy="172.5" r="172.5" fill="url(#paint1_linear)"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="43.1714" height="57.8459" rx="21.5857" transform="matrix(-0.643258 -0.765649 -0.766439 0.642316 289.801 183.474)" fill="#FF8C73"/>
+<rect width="43.1664" height="57.8527" rx="21.5832" transform="matrix(-0.789332 0.613966 0.612141 0.790748 103.262 136.681)" fill="#FF8C73"/>
+<rect x="73.502" y="151.566" width="201.048" height="245.874" rx="100.524" fill="#FBC28E"/>
+<ellipse rx="27.8678" ry="20.7934" transform="matrix(0.173176 -0.984891 0.984732 0.174077 130.481 226.279)" fill="#FF8C73"/>
+<ellipse rx="27.8678" ry="20.7934" transform="matrix(-0.173176 -0.984891 -0.984732 0.174077 213.296 226.279)" fill="#FF8C73"/>
+<ellipse cx="134.202" cy="218.548" rx="6.64298" ry="6.61751" fill="#1E0E47"/>
+<ellipse cx="212.162" cy="218.548" rx="6.64298" ry="6.61751" fill="#1E0E47"/>
+<path d="M134.876 253.184C134.876 231.656 152.327 214.205 173.855 214.205C195.382 214.205 212.833 231.656 212.833 253.184V260.783C212.833 279.676 197.517 294.992 178.624 294.992H169.086C150.192 294.992 134.876 279.676 134.876 260.783V253.184Z" fill="#FFDBBA"/>
+<path d="M155.565 253.225C157.34 254.786 163.683 257.908 174.861 257.908C186.039 257.908 191.273 254.786 192.493 253.225" stroke="#1E0E47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="158.115" y="233.105" width="32.0915" height="15.4409" rx="7.72043" fill="#1E0E47"/>
+<line x1="174.647" y1="247.956" x2="174.647" y2="257.908" stroke="#1E0E47" stroke-width="3"/>
+<rect x="135.981" y="214.354" width="2.21321" height="3.30875" rx="1.1066" fill="white"/>
+<rect x="213.444" y="214.354" width="2.21321" height="3.30875" rx="1.1066" fill="white"/>
+</g>
+<path d="M236.529 314.204C236.806 320.891 239.774 327.821 244.305 328.44L260.175 322.23L270.525 283.59C270.525 283.59 235.882 298.623 236.529 314.204Z" fill="#FF8C73"/>
+<path d="M264.746 286.023C280.203 277.099 294.794 281.417 300.98 292.132C307.166 302.846 295.583 316.928 283.485 325.288C264.384 338.488 252.319 329.137 247.957 321.583C241.771 310.868 249.288 294.948 264.746 286.023Z" fill="#FBC28E"/>
+<path d="M109.896 316.152C109.619 322.839 106.837 329.77 102.306 330.388L85.7461 324.868L75.8994 285.538C75.8994 285.538 110.543 300.571 109.896 316.152Z" fill="#FF8C73"/>
+<path d="M84.9439 286.023C69.486 277.099 54.8955 281.417 48.7095 292.132C42.5235 302.846 54.1064 316.928 66.2047 325.288C85.3057 338.488 97.3707 329.137 101.732 321.583C107.918 310.868 100.402 294.948 84.9439 286.023Z" fill="#FBC28E"/>
+<defs>
+<linearGradient id="paint0_linear" x1="172.5" y1="0" x2="172.5" y2="345" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#EDFFFC"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="172.5" y1="0" x2="172.5" y2="345" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#EDFFFC"/>
+</linearGradient>
+</defs>
+</svg>

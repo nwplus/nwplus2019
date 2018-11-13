@@ -9,7 +9,8 @@ import { Footer } from '../footer';
 import firstPanelDesktop from '../../assets/local-hack-day/first-panel/scenery-desktop.svg';
 import firstPanelMobile from '../../assets/local-hack-day/first-panel/scenery-mobile.svg';
 
-import bearCircle from '../../assets/bear-circle.svg';
+import bearCircle from '../../assets/bear-circle-LHD.svg';
+
 
 const lhdUrl = 'https://localhackday.mlh.io/lhd-2018/events/33-nwplus-at-the-university-of-british-columbia';
 
@@ -104,7 +105,8 @@ class LocalHackDay extends React.Component {
             <p className="fill-min-width margin-top-s">Still have questions? Feel free to email us at <a href="mailto:hello@nwplus.io">hello@nwplus.io</a> or shoot us a message on <a href="https://facebook.com/nwhacks">Facebook</a>.</p>
           </div>
 
-          <div className="sponsors flex jc-center dir-col pad-top-tera">
+          <h2 className="fill-width margin-bottom-s pad-sides-tera scale-pad-sides-laptop">Sponsors</h2>
+          <div className="sponsors flex jc-center dir-col pad-top-m">
             {getImage('cute-bear', bearCircle)}
             <p className="primary flex jc-center text-center">
               Stay tuned for sponsor updates!
