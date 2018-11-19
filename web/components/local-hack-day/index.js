@@ -17,7 +17,7 @@ import secondPanelShare from '../../assets/local-hack-day/second-panel/share.svg
 import bearCircle from '../../assets/bear-circle-LHD.svg';
 
 
-const lhdUrl = 'https://localhackday.mlh.io/lhd-2018/events/33-nwplus-at-the-university-of-british-columbia';
+const lhdUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe08q0eD90Cd7R8jRBL0bU788OzB-lnlpSGekWGtCXmGVn36Q/viewform';
 
 const getImage = (alt, src, className = '') => (
   <img
@@ -81,7 +81,7 @@ class LocalHackDay extends React.Component {
         <div className="first-panel">
           <img className="scenery-desktop fill-width" alt="illustration" src={firstPanelDesktop} />
           <img className="scenery-mobile fill-width" alt="illustration" src={firstPanelMobile} />
-          <PrimaryButton text="Register" className="register-button" onClick={() => (window.open(lhdUrl))} />
+          <PrimaryButton text="Join The Waitlist" className="register-button" onClick={() => (window.open(lhdUrl))} />
         </div>
 
         <div className="second-panel flex dir-row jc-between pad-bottom-mega pad-sides-mega scale-pad-sides-laptop-none scale-row-tablet text-align-center">
