@@ -3,6 +3,7 @@ import { SECTION } from './Sections';
 import { QUESTIONS } from './Questions';
 import { PrimaryButton } from '../input/buttons';
 import { ShowHideTextView } from '../view';
+import { Sponsors } from './Sponsors';
 import { Footer } from '../footer';
 
 // first panel
@@ -14,17 +15,7 @@ import secondPanelLearn from '../../assets/local-hack-day/second-panel/learn.svg
 import secondPanelBuild from '../../assets/local-hack-day/second-panel/build.svg';
 import secondPanelShare from '../../assets/local-hack-day/second-panel/share.svg';
 
-import bearCircle from '../../assets/bear-circle-LHD.svg';
-
-
 const lhdUrl = 'https://localhackday.mlh.io/lhd-2018/events/33-nwplus-at-the-university-of-british-columbia';
-
-const getImage = (alt, src, className = '') => (
-  <img
-    className={className}
-    alt={alt}
-    src={src} />
-);
 
 const getFaqSection = section => (
   <div>
@@ -84,7 +75,7 @@ class LocalHackDay extends React.Component {
           <PrimaryButton text="Register" className="register-button" onClick={() => (window.open(lhdUrl))} />
         </div>
 
-        <div className="second-panel flex dir-row jc-between pad-bottom-mega pad-sides-mega scale-pad-sides-laptop-none scale-row-tablet text-align-center">
+        <div className="second-panel section flex dir-row jc-between pad-bottom-mega pad-sides-mega scale-pad-sides-laptop-none scale-row-tablet text-align-center">
           <div className="flex dir-col pad-sides-giga scale-pad-sides-desktop scale-width-tablet" style={{ width: '32%' }}>
             <img className="pad-top-xl" alt="illustration" src={secondPanelLearn} />
             <h4>Learn</h4>
@@ -110,7 +101,7 @@ class LocalHackDay extends React.Component {
         </div>
 
         <div className="overflow-hidden flex jc-center ai-center dir-col">
-          <div ref={node => this.faqDiv = node} className={`${ROW_STYLE}`}>
+          <div ref={node => this.faqDiv = node} className={`${ROW_STYLE} section`}>
             <h2 className="fill-width margin-bottom-s">Frequently asked questions</h2>
             <div className="flex jc-start faq scale-row-desktop">
               <div className="flex jc-between dir-row margin-right-s">
@@ -135,13 +126,7 @@ class LocalHackDay extends React.Component {
             <p className="fill-min-width margin-top-s">Still have questions? Feel free to email us at <a href="mailto:hello@nwplus.io">hello@nwplus.io</a> or shoot us a message on <a href="https://facebook.com/nwhacks">Facebook</a>.</p>
           </div>
 
-          <h2 className="fill-width margin-bottom-s pad-sides-tera scale-pad-sides-laptop">Sponsors</h2>
-          <div className="sponsors flex jc-center dir-col pad-top-m">
-            {getImage('cute-bear', bearCircle)}
-            <p className="primary flex jc-center text-center">
-              Stay tuned for sponsor updates!
-            </p>
-          </div>
+          <Sponsors />
 
           <Footer type="lhd" />
         </div>

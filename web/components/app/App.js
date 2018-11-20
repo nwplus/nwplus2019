@@ -20,6 +20,7 @@ class App extends React.Component {
           <Navbar />
           <Switch>
             {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/" component={() => window.location = 'https://nwhacks.io'} />
             <Route exact path="/localhackday" component={LocalHackDay} />
             <Route path="/page_not_found" component={NotFound} />
             <Route component={() => <Redirect to="/page_not_found" />} />
