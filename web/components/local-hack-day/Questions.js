@@ -12,75 +12,71 @@ export const QUESTIONS = Object.freeze({
       </div>
     ),
     questions: [{
-      'What is a hackathon?': (
+      'What is Local Hack Day?': (
         <div>
           <p className="margin-top-none">
-            A hackathon is an event where teams collaborate on a project or &quot;hack&quot; within
-            a tight time limit. At nwHacks, teams of 2-4 collaborate over 24 hours to
-            challenge the status quo, fulfill prize challenges, and create meaningful impact.
-            Industry professionals from the local community mentor at hackathons to share their
-            experiences, support projects from a technical perspective, and meet the younger
-            generation of hackers. The winners will be chosen by a panel of judges comprised
-            of top industry professionals.
+            Local Hack Day is a 12-hour beginner-friendly hackathon, bringing together students
+            passionate about technology to build cool projects together!
           </p>
         </div>
       ),
     },
     {
       'How can I officially sign up?': (
-        <p className="margin-top-none">Registration on our website will open in November.&nbsp;
-          <a href="http://eepurl.com/dF3b7n">
-            Let us know your email and we&apos;ll tell you once it does!
-          </a>
+        <p className="margin-top-none">Hacker applications are open now, you can click &quot;Register&quot;
+        above to access the application.
         </p>
       ),
     },
     {
       'How much does it cost?': (
         <p className="margin-top-none">
-          nwHacks is <b>100% free</b> for all participants. However, registration is
-          strictly limited to high school and university students, and recent graduates only.
-          A bus will be sent to the University of Washington for attendees from Seattle and
-          the surrounding area. For other hackers, we will be offering a limited number
-          of travel reimbursements of up to $200 per person (economy flights only).
+          Nothing! Attending UBC Local Hack Day is entirely free.
         </p>
       ),
     },
     {
-      'Is there a theme for nwHacks?': (
+      'Who can participate in this hackathon?': (
         <p className="margin-top-none">
-          At nwHacks, we love seeing the variety of projects inspired by the countless areas of
-          tech that teams want to explore. We do not have a specific theme but there may be
-          sponsored prizes with specific qualifying criteria.
+          We welcome all students with any technical background and knowledge to join us for
+          this event! We encourage teams to be formed with participants with a varied skillset
+          to learn more from a variety of team roles.
         </p>
       ),
     },
     {
-      "What if I don't have any experience?": (
+      'Is Local Hack Day open to all schools and majors?': (
+        <p className="margin-top-none">
+          Yes! All students are welcome to attend!
+        </p>
+      ),
+    },
+    {
+      'How do I get to the event?': (
+        <p className="margin-top-none">
+          We don&apos;t currently offer travel reimbursements, but
+          we&apos;ll take good care of you if you can make your way here!
+        </p>
+      ),
+    },
+    {
+      'Where is the event?': (
         <div>
           <p className="margin-top-none">
-            {/* Marked as "to be edited" on Notion" */}
-            Have no fear! Hackathons are really a place for learning and one of the best ways
-            to do so. We&apos;ll have series of workshops to bootstrap you for hacking. And when
-            you run into any problems or questions, mentors will be happy to help you out.
-            By the time you walk out, you will have new skills, friends, and a project
-            under your belt!
-          </p>
-          <p>
-            On the first day of nwHacks, we will also facilitate team building so no one gets
-            left out! There will be opportunities to connect with people and form teams before
-            the event in-person and online.
+            UBC Local Hack Day 2018 will be held in the Hugh Dempster Pavilion
+            (DMP 301) at the University of British Columbia, in Vancouver,
+            Canada on December 1st, 2018.
           </p>
         </div>
       ),
     },
     {
-      "I'm a designer/graduate/rad human! Can I attend?": (
+      'What if I have never been to a hackathon before?': (
         <p className="margin-top-none">
-          We are excited to invite 650 people to nwHacks including high school and
-          university students from all faculties! Great projects are more than just
-          their code. New graduates are welcome as long as your graduation date is
-          within one year of January 2019.
+          Don&apos;t worry! The aim of Local Hack Day is ultimately to learn,
+          so having experience is not a requirement.
+          There will be workshops and mentors ready to help you out and teach you some
+          new skills that you can use for your project or for the future!
         </p>
       ),
     },
@@ -101,15 +97,13 @@ export const QUESTIONS = Object.freeze({
     ),
     questions: [
       {
-        'How big can my team be?': (
+        'How do teams work?': (
           <p className="margin-top-none">
-            {/* Marked as "check wording" on Notion" */}
-            Teams are usually 2-4 people in size.
-            Teams bigger than 4 people are usually split up into smaller ones,
-            as we&apos;ve found large teams aren&apos;t the best solution for
-            a 24h event. Don&apos;t worry if you can&apos;t find your team
-            beforehand, staff at the event will help you find other
-            teammates and provide you with many opportunities to find others!
+            Feel free to hack solo or in groups of up to 4 people. (You can hack in larger
+            groups but if you win, the prizes are only meant for 4 people so you&apos;ll
+            have to divide them up yourselves.) Don&apos;t worry if you don&apos;t have a
+            team yet – we&apos;ll have team building activities for you to meet and learn
+            from new people!
           </p>
         ),
       },
@@ -118,7 +112,7 @@ export const QUESTIONS = Object.freeze({
           <p className="margin-top-none">
             Don&apos;t worry!
             A lot of hackers just like you are in the same position.
-            On the first day of the event, we will make sure to pair everyone up with a team
+            On the day of the event, we will make sure to pair everyone up with a team
             of hackers so no one gets left out! There will also be an opportunity to connect
             with people and form teams before the event (after you have been chosen to attend).
           </p>
@@ -147,10 +141,9 @@ export const QUESTIONS = Object.freeze({
       {
         'What should I bring?': (
           <p className="margin-top-none">
-            nwHacks is a 24h event, which means that hackers should be prepared
-            to sleep overnight at the venue. Be sure to bring everything you need
-            to stay the night, including a sleeping bag! All food will be provided
-            at event so don&apos;t worry about that!
+            Bring a valid student ID and government-issued ID for admission, plus a laptop
+            and charger for hacking! If you wish, you can also bring any hardware that you
+            would like to hack with.
           </p>
         ),
       },
@@ -162,18 +155,34 @@ export const QUESTIONS = Object.freeze({
       //   ),
       // },
       {
-        'How do I get to nwHacks?': (
-          <div>
-            <p className="margin-top-none">
-              If you are coming from afar, we will be offering a limited number of
-              travel reimbursements up to $200 per person. We also recommend
-              applying for travel subsidies with your university or local government.
-            </p>
-            <p>
-              For attendees from Seattle and the surrounding area, we will have
-              buses to and from the University of Washington.
-            </p>
-          </div>
+        'What will I eat?': (
+          <p className="margin-top-none">
+            We will be providing breakfast, lunch, and dinner, as well as snacks
+            and drinks throughout the day to keep you all comfortable as you&apos;re hacking away!
+          </p>
+        ),
+      },
+      {
+        'I registered, but can no longer attend!': (
+          <p className="margin-top-none">
+            Please let us know, so that we can open up your spot to a student on the waitlist!
+            Since we have a limited capacity, students will be placed on the waitlist, and if
+            a spot opens up, we&apos;ll reach out to a waitlisted student.
+          </p>
+        ),
+      },
+      {
+        'Registration is closed but I still really want to attend!': (
+          <p className="margin-top-none">
+            Sign up for the waitlist! If a spot opens up, we&apos;ll reach out to you!
+          </p>
+        ),
+      },
+      {
+        'I have more questions!': (
+          <p className="margin-top-none">
+            Shoot us an email at lhd (at) nwplus.io!
+          </p>
         ),
       },
     ],
