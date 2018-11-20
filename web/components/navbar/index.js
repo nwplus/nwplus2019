@@ -8,7 +8,7 @@ import { SecondaryButton, PrimaryButton } from '../input/buttons';
 
 import logo from '../../assets/logo.svg';
 
-const lhdUrl = 'https://localhackday.mlh.io/lhd-2018/events/33-nwplus-at-the-university-of-british-columbia';
+const lhdUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe08q0eD90Cd7R8jRBL0bU788OzB-lnlpSGekWGtCXmGVn36Q/viewform';
 
 const getButton = (buttonType) => {
   switch (buttonType) {
@@ -19,7 +19,7 @@ const getButton = (buttonType) => {
     case BUTTON_TYPE.DASHBOARD:
       return (<Link to="/dashboard"><SecondaryButton text="My application" /></Link>);
     case BUTTON_TYPE.REGISTER:
-      return (<a href={lhdUrl} target="_blank" rel="noopener noreferrer"><PrimaryButton text="Register" /></a>);
+      return (<a href={lhdUrl} target="_blank" rel="noopener noreferrer"><PrimaryButton text="Join The Waitlist" /></a>);
     default:
       return (<div />);
   }

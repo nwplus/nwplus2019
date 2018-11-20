@@ -15,7 +15,7 @@ import secondPanelLearn from '../../assets/local-hack-day/second-panel/learn.svg
 import secondPanelBuild from '../../assets/local-hack-day/second-panel/build.svg';
 import secondPanelShare from '../../assets/local-hack-day/second-panel/share.svg';
 
-const lhdUrl = 'https://localhackday.mlh.io/lhd-2018/events/33-nwplus-at-the-university-of-british-columbia';
+const lhdUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe08q0eD90Cd7R8jRBL0bU788OzB-lnlpSGekWGtCXmGVn36Q/viewform';
 
 const getFaqSection = section => (
   <div>
@@ -72,7 +72,7 @@ class LocalHackDay extends React.Component {
         <div className="first-panel">
           <img className="scenery-desktop fill-width" alt="illustration" src={firstPanelDesktop} />
           <img className="scenery-mobile fill-width" alt="illustration" src={firstPanelMobile} />
-          <PrimaryButton text="Register" className="register-button" onClick={() => (window.open(lhdUrl))} />
+          <PrimaryButton text="Join The Waitlist" className="register-button" onClick={() => (window.open(lhdUrl))} />
         </div>
 
         <div className="second-panel section flex dir-row jc-between pad-bottom-mega pad-sides-mega scale-pad-sides-laptop-none scale-row-tablet text-align-center">
@@ -123,7 +123,7 @@ class LocalHackDay extends React.Component {
                 }
               </div>
             </div>
-            <p className="fill-min-width margin-top-s">Still have questions? Feel free to email us at <a href="mailto:hello@nwplus.io">hello@nwplus.io</a> or shoot us a message on <a href="https://facebook.com/nwhacks">Facebook</a>.</p>
+            <p className="fill-min-width margin-top-s">Still have questions? Feel free to email us at <a href="mailto:lhd@nwplus.io">lhd@nwplus.io</a> or shoot us a message on <a href="https://facebook.com/nwhacks">Facebook</a>.</p>
           </div>
 
           <Sponsors />

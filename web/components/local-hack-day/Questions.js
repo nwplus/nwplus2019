@@ -23,8 +23,9 @@ export const QUESTIONS = Object.freeze({
     },
     {
       'How can I officially sign up?': (
-        <p className="margin-top-none">Hacker applications are open now, you can click &quot;Register&quot;
-        above to access the application.
+        <p className="margin-top-none">Unfortunately we have reached capacity for UBC Local Hack Day,
+        you can join the waitlist by clicking &quot;Join The Waitlist&quot; You&apos;ll be notified
+        if any spots open up.
         </p>
       ),
     },
