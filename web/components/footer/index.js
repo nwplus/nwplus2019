@@ -126,7 +126,7 @@ const Footer = ({ type }) => (
       </div>
       <div className="footnote pad-bot-l">
         <p>Organized and held by nwPlus
-          <br />Copyright © 2018 nwHacks
+          <br />Copyright © 2018 nwPlus
         </p>
       </div>
     </div>

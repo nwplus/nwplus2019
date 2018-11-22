@@ -123,7 +123,7 @@ class LocalHackDay extends React.Component {
                 }
               </div>
             </div>
-            <p className="fill-min-width margin-top-s">Still have questions? Feel free to email us at <a href="mailto:lhd@nwplus.io">lhd@nwplus.io</a> or shoot us a message on <a href="https://facebook.com/nwhacks">Facebook</a>.</p>
+            <p className="fill-min-width margin-top-s">Still have questions? Feel free to email us at <a href="mailto:lhd@nwplus.io">lhd@nwplus.io</a> or shoot us a message on <a href="http://facebook.com/nwplusubc">Facebook</a>.</p>
           </div>
 
           <Sponsors />
