@@ -123,8 +123,8 @@ export const QUESTIONS = Object.freeze({
         'Can I work on my previous projects?': (
           <p className="margin-top-none">
             No, all projects must be built from scratch. However, you are welcome to brainstorm
-            ideas beforehand. This rule is strictly adhered to at UBC Local Hack Day and any team found
-            working on previous projects will be automatically disqualified in the event. If
+            ideas beforehand. This rule is strictly adhered to at UBC Local Hack Day and any team
+            found working on previous projects will be automatically disqualified in the event. If
             you are using libraries or tools that you have made in the past, don&apos;t worry, this
             does not apply.
           </p>
