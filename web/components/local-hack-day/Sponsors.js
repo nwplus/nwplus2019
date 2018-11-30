@@ -7,6 +7,7 @@ import atp from '../../assets/local-hack-day/sponsors/atp.svg';
 import nextbillion from '../../assets/local-hack-day/sponsors/nextbillion.svg';
 import slack from '../../assets/local-hack-day/sponsors/slack.svg';
 import ubc from '../../assets/local-hack-day/sponsors/ubc.png';
+import innovators from '../../assets/local-hack-day/sponsors/innovators.png';
 import mlh from '../../assets/local-hack-day/sponsors/mlh.svg';
 import microsoft from '../../assets/local-hack-day/sponsors/microsoft.png';
 import github from '../../assets/local-hack-day/sponsors/github.png';
@@ -22,6 +23,7 @@ import guayaki from '../../assets/local-hack-day/sponsors/guayaki.png';
 import redbull from '../../assets/local-hack-day/sponsors/redbull.png';
 import pacificPoke from '../../assets/local-hack-day/sponsors/PacificPoke.png';
 import stormcrow from '../../assets/local-hack-day/sponsors/stormcrow.png';
+import red from '../../assets/local-hack-day/sponsors/red.png';
 
 
 const getSponsor = (alt, src, href, className) => (
@@ -39,9 +41,10 @@ const Sponsors = () => (
     <h2 className="margin-bottom-m">Sponsors</h2>
     {getSponsor('Two Tall Totems', ttt, 'https://www.twotalltotems.com/', 'title')}<br />
     {getSponsor('A Thinking Ape', atp, 'https://www.athinkingape.com/', 'monetary')}
-    {getSponsor('NextBillion', nextbillion, 'https://www.nextbillion.org/', 'monetary')}
+    {getSponsor('NextBillion', nextbillion, 'https://www.nextbillion.org/', 'monetary')}<br />
     {getSponsor('Slack', slack, 'https://slack.com/', 'monetary')}
-    {getSponsor('UBC', ubc, 'https://www.cs.ubc.ca/', 'monetary ubc')}<br />
+    {getSponsor('UBC', ubc, 'https://www.cs.ubc.ca/', 'monetary ubc')}
+    {getSponsor('League of Innovators', innovators, 'https://www.theleagueofinnovators.com/', 'monetary')}<br />
     {getSponsor('MLH', mlh, 'https://mlh.io/', 'monetary')}
     {getSponsor('Microsoft', microsoft, 'https://www.microsoft.com/', 'monetary')}
     {getSponsor('GitHub', github, 'https://www.github.com/', 'monetary')}<br />
@@ -56,6 +59,7 @@ const Sponsors = () => (
     {getSponsor('Red Bull', redbull, 'https://www.redbull.com/', 'in-kind')}
     {getSponsor('Pacific Poke', pacificPoke, 'https://www.thepacificpoke.com/', 'in-kind')}
     {getSponsor('Storm Crow', stormcrow, 'https://www.stormcrowalehouse.com/', 'in-kind')}
+    {getSponsor('Red Academy', red, 'https://redacademy.com/', 'in-kind')}
 
   </div>
 );
