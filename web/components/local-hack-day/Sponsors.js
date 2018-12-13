@@ -39,7 +39,7 @@ const getSponsor = (alt, src, href, className) => (
 const Sponsors = () => (
   <div className="sponsors">
     <h2 className="margin-bottom-m">Sponsors</h2>
-    {getSponsor('Two Tall Totems', ttt, 'https://www.twotalltotems.com/', 'title')}<br />
+    {getSponsor('Two Tall Totems', ttt, 'https://ttt.studio/', 'title')}<br />
     {getSponsor('A Thinking Ape', atp, 'https://www.athinkingape.com/', 'monetary')}
     {getSponsor('NextBillion', nextbillion, 'https://www.nextbillion.org/', 'monetary')}<br />
     {getSponsor('Slack', slack, 'https://slack.com/', 'monetary')}

@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom';
 import { DISPLAY_TYPE } from '../../containers/navbar/DisplayTypes';
 import { BUTTON_TYPE } from '../../containers/navbar/ButtonTypes';
 import { SECTION } from '../home/Sections';
+import { EXTERNAL } from '../local-hack-day/External';
 import { SecondaryButton, PrimaryButton } from '../input/buttons';
 
 import logo from '../../assets/logo.svg';
-
-const lhdUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe08q0eD90Cd7R8jRBL0bU788OzB-lnlpSGekWGtCXmGVn36Q/viewform';
 
 const getButton = (buttonType) => {
   switch (buttonType) {
@@ -19,7 +18,7 @@ const getButton = (buttonType) => {
     case BUTTON_TYPE.DASHBOARD:
       return (<Link to="/dashboard"><SecondaryButton text="My application" /></Link>);
     case BUTTON_TYPE.REGISTER:
-      return (<a href={lhdUrl} target="_blank" rel="noopener noreferrer"><PrimaryButton text="Join The Waitlist" /></a>);
+      return (<a href={EXTERNAL.PROJECT_SHOWCASE} target="_blank" rel="noopener noreferrer"><PrimaryButton text="View Hacks" /></a>);
     default:
       return (<div />);
   }

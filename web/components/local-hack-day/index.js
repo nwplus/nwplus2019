@@ -1,7 +1,8 @@
 import React from 'react';
 import { SECTION } from './Sections';
 import { QUESTIONS } from './Questions';
-import { PrimaryButton } from '../input/buttons';
+import { EXTERNAL } from './External';
+import { PrimaryButton, SecondaryButton } from '../input/buttons';
 import { ShowHideTextView } from '../view';
 import { Sponsors } from './Sponsors';
 import { Footer } from '../footer';
@@ -14,8 +15,6 @@ import firstPanelMobile from '../../assets/local-hack-day/first-panel/scenery-mo
 import secondPanelLearn from '../../assets/local-hack-day/second-panel/learn.svg';
 import secondPanelBuild from '../../assets/local-hack-day/second-panel/build.svg';
 import secondPanelShare from '../../assets/local-hack-day/second-panel/share.svg';
-
-const lhdUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe08q0eD90Cd7R8jRBL0bU788OzB-lnlpSGekWGtCXmGVn36Q/viewform';
 
 const getFaqSection = section => (
   <div>
@@ -72,7 +71,9 @@ class LocalHackDay extends React.Component {
         <div className="first-panel">
           <img className="scenery-desktop fill-width" alt="illustration" src={firstPanelDesktop} />
           <img className="scenery-mobile fill-width" alt="illustration" src={firstPanelMobile} />
-          <PrimaryButton text="Join The Waitlist" className="register-button" onClick={() => (window.open(lhdUrl))} />
+          <h3 className="flex jc-center tagline margin-bottom-l">Stay tuned for LHD 2019!</h3>
+          <PrimaryButton text="View Hacks" className="call-to-action" onClick={() => (window.open(EXTERNAL.PROJECT_SHOWCASE))} />
+          <SecondaryButton text="View Photos" className="call-to-action margin-top-s margin-bottom-m" onClick={() => (window.open(EXTERNAL.PHOTO_ALBUM))} />
         </div>
 
         <div className="second-panel section flex dir-row jc-between pad-bottom-mega pad-sides-mega scale-pad-sides-laptop-none scale-row-tablet text-align-center">

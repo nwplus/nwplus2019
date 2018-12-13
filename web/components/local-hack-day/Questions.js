@@ -23,9 +23,8 @@ export const QUESTIONS = Object.freeze({
     },
     {
       'How can I officially sign up?': (
-        <p className="margin-top-none">Unfortunately we have reached capacity for UBC Local Hack Day,
-        you can join the waitlist by clicking &quot;Join The Waitlist&quot; You&apos;ll be notified
-        if any spots open up.
+        <p className="margin-top-none">
+          Please check back in November 2019 to register for LHD 2019!
         </p>
       ),
     },

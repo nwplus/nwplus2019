@@ -18,7 +18,7 @@ body
       max-width: 300px
 
   .first-panel
-    background-color: $white
+    background-color: #DEEAFD
     padding-top: 64px
     display: block
     overflow-y: auto
@@ -36,16 +36,20 @@ body
         display: none
         @media screen and (max-width: $tablet)
           display: inline
-  .register-button
-    z-index: 100
-    display: block
-    margin-right: auto
-    margin-left: auto
-    margin-top: -29px
-    height: 45px
-    min-width: 25%
-    @media screen and (max-width: $tablet)
-      min-width: 100%
+    .call-to-action
+      z-index: 100
+      display: block
+      margin-right: auto
+      margin-left: auto
+      height: 45px
+      min-width: 25%
+      @media screen and (max-width: $tablet)
+        min-width: 100%
+      &.register
+        margin-top: -29px
+    .tagline
+      font-family: Apercu Pro
+      margin-top: -30px
   &-skyline
     margin-bottom: -$spacing-tera
     @media screen and (max-width: $desktop)
@@ -110,7 +114,7 @@ body
       vertical-align: middle
       padding: 30px
     .title
-      width: 500px
+      width: 400px
     .monetary
       width: 300px
     .ubc
