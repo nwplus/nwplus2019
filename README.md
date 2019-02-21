@@ -1,6 +1,6 @@
-<h1 align="center">nwPlus 2019 ⛰</h1>
+<h1 align="center">LHD 2019</h1>
 <p align="center">
-  The static websites for nwPlus and Local Hack Day
+  The static website for Local Hack Day
 </p>
 
 <br>
