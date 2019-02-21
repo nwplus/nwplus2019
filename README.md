@@ -1,4 +1,4 @@
-<h1 align="center">LHD 2019 ⛰</h1>
+<h1 align="center">LHD 2019</h1>
 <p align="center">
   The static website for Local Hack Day
 </p>
