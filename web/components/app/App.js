@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Switch, Route, HashRouter, Redirect } from 'react-router-dom';
 
 // Containers
-import LocalHackDay from '../local-hack-day/index';
+import Home from '../home/Home';
 import Navbar from '../../containers/navbar';
 
 // Components
@@ -18,7 +18,7 @@ class App extends React.Component {
         <div>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={LocalHackDay} />
+            <Route exact path="/" component={Home} />
             <Route path="/page_not_found" component={NotFound} />
             <Route component={() => <Redirect to="/page_not_found" />} />
           </Switch>
