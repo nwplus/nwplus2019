@@ -1,6 +1,6 @@
-<h1 align="center">LHD 2019</h1>
+<h1 align="center">nwPlus 2019</h1>
 <p align="center">
-  The static website for Local Hack Day
+  The club homepage for nwPlus (2019).
 </p>
 
 <br>
