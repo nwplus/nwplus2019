@@ -283,7 +283,7 @@ class Home extends React.Component {
           </p>
         </div>
 
-        <Footer />
+        <Footer type="nwplus" />
 
       </div>
     );
