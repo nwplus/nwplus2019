@@ -4,7 +4,7 @@ import { DISPLAY_TYPE } from './DisplayTypes';
 import { BUTTON_TYPE } from './ButtonTypes';
 import Navbar from '../../components/navbar';
 
-const getDisplayType = () => DISPLAY_TYPE.LOGO_AND_BUTTON;
+const getDisplayType = () => DISPLAY_TYPE.LOGO_AND_LINKS;
 const getButtonType = () => BUTTON_TYPE.REGISTER;
 export const NavbarContainer = () => (
   <Navbar

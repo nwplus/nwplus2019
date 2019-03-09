@@ -6,7 +6,7 @@ import { BUTTON_TYPE } from '../../containers/navbar/ButtonTypes';
 import { SECTION } from '../home/Sections';
 import { SecondaryButton } from '../input/buttons';
 
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo-white.svg';
 
 const getButton = (buttonType) => {
   switch (buttonType) {
@@ -69,10 +69,9 @@ class Navbar extends React.Component {
     const button = getButton(buttonType);
     const linkElements = [
       <Link to={{ pathname: '/', hash: SECTION.ABOUT }}><b>About</b></Link>,
-      <Link to={{ pathname: '/', hash: SECTION.STORIES }}><b>Stories</b></Link>,
-      <Link to={{ pathname: '/', hash: SECTION.FAQ }}><b>FAQ</b></Link>,
-      <a href="http://nwplus.github.io/nwhacks2018_static" target="_blank" rel="noopener noreferrer">
-        <b>2018</b>
+      <Link to={{ pathname: '/', hash: SECTION.EVENTS }}><b>Events</b></Link>,
+      <a href="mailto:hello@nwplus.io">
+        <b>Contact Us</b>
       </a>,
     ];
 
@@ -111,7 +110,7 @@ class Navbar extends React.Component {
     }
 
     return (
-      <nav className={`fill-width flex ${hidden ? 'hide' : ''} ${transparent ? 'transparent' : 'shadow'}`}>
+      <nav className={`fill-width flex ${hidden ? 'hide' : ''} ${transparent ? 'transparent' : 'shadow'}abc`}>
         <div className="flex ai-center jc-start margin-sides-l scale-margin-sides-tablet">
           <div className="flex ai-center">
             <Link to="/"><img alt="nwHacks" src={logo} /></Link>

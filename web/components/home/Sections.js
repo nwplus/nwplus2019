@@ -1,6 +1,6 @@
 export const SECTION = Object.freeze({
   ABOUT: '#about',
-  STORIES: '#stories',
+  EVENTS: '#events',
   FAQ: '#faq',
   SPONSORS: '#sponsors',
 });
