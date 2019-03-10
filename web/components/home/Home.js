@@ -6,6 +6,7 @@ import { TextInput } from '../input/text';
 import { PrimaryButton } from '../input/buttons';
 import { ShowHideTextView } from '../view';
 import { Footer } from '../footer';
+import { Events } from './components';
 
 // MLH ribbon
 import mlhblueribbon from '../../assets/mlh-blue-ribbon.svg';
@@ -232,23 +233,7 @@ class Home extends React.Component {
           ref={node => this.storiesDiv = node}
           className={`${ROW_STYLE}`}
         >
-          <h2 className="fill-width margin-bottom-xxl">Hacker stories</h2>
-          <div className="flex jc-between row-stories scale-row-tablet">
-            {
-              ['spencer', 'olivia', 'avinash'].map(person => (
-                <div className="scale-width-tablet fill-height" key={`${person}`}>
-                  <div className="relative overflow-hidden">
-                    {getImage(`${person}-bg`, userToBg[person], 'fill-width pad-right-s')}
-                    {getImage(`${person}`, userToImg[person], 'fill-width overlay')}
-                    <div className="overlay scale-hide-full-screen scale-hover-disable-full-screen hover-show fill-width fill-height">
-                      <div className="pad-top-l pad-bottom-xxl pad-sides-m hover-description flex dir-col jc-center fill-height">{userToText[person]}</div>
-                    </div>
-                  </div>
-                  <div className="scale-show-full-screen pad-top-m pad-bottom-xxl flex dir-col jc-center">{userToText[person]}</div>
-                </div>
-              ))
-            }
-          </div>
+          <Events />
         </div>
 
         <div ref={node => this.faqDiv = node} className={`${ROW_STYLE}`}>
